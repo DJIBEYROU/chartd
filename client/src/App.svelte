@@ -51,9 +51,9 @@
       //const base = import.meta.env.VITE_API_BASE_URL;
       //const response = await fetch(`${base}/api/data?${params}`);
       // old: fetch(`http://localhost:3000/api/data?${params}`)
-
+      const response = await fetch(`https://https://chartd-production.up.railway.app/api/data?${params}`);
       //const response = await fetch(`${base}/api/data?${params}`);
-      const response = await fetch(`/api/data?${params.toString()}`);
+      //const response = await fetch(`/api/data?${params.toString()}`);
       const result = await response.json();
       dailyData = JSON.parse(result.type.daily)
       monthlyData = JSON.parse(result.categorized.monthly)
