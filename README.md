@@ -23,6 +23,7 @@ docker compose up --build
 ```
 
 Then open your browser to:
+
 - Frontend: `http://localhost`
 - Backend API: `http://localhost:3000`
 
@@ -33,18 +34,21 @@ For detailed Docker instructions, see [DOCKER.md](DOCKER.md)
 #### Backend: Flask
 
 1. Navigate to the server folder and create a Python virtual environment:
+
 ```bash
 cd server
 python3 -m venv venv
 ```
 
 2. Activate the environment and install dependencies:
+
 ```bash
 source venv/bin/activate
 pip install -r requirements.txt
 ```
 
 3. Run the server:
+
 ```bash
 python3 app.py
 ```
@@ -54,12 +58,14 @@ The backend will be available at `http://localhost:3000`
 #### Frontend: Svelte
 
 1. Open a new terminal tab and navigate to the client folder:
+
 ```bash
 cd client
 npm install
 ```
 
 2. Run the development server:
+
 ```bash
 npm run dev
 ```
@@ -88,16 +94,19 @@ chartd/
 ## Technology Stack
 
 **Frontend:**
+
 - Svelte
 - Vite
 - D3.js (for visualizations)
 
 **Backend:**
+
 - Flask
 - Pandas (for data processing)
 - Flask-CORS
 
 **Deployment:**
+
 - Docker
 - Nginx (for serving frontend in production)
 
@@ -113,6 +122,7 @@ Fetch energy data with the following query parameters:
 - `aggregation`: Data aggregation level ("hourly", "daily", "weekly", "monthly")
 
 Example:
+
 ```bash
 curl "http://localhost:3000/api/data?start_date=2024-04-01&end_date=2024-04-15&region=japan&aggregation=hourly"
 ```
@@ -153,11 +163,13 @@ npm test
 ### Building for Production
 
 #### Using Docker
+
 ```bash
 docker compose up --build
 ```
 
 #### Manual Build
+
 ```bash
 # Build frontend
 cd client
