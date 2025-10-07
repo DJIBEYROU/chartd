@@ -61,7 +61,10 @@
 
       // Using local backend server
       // const url = import.meta.env.VITE_API_BASE_URL;
-      const url = "https://marvelous-achievement-production.up.railway.app";
+      // const url = process.env.VITE_API_BASE_URL;
+
+      const url = "https://server-production-djiburil.up.railway.app";
+
       const response = await fetch(`${url}/api/data?${params}`);
       const result = await response.json();
       dailyData = JSON.parse(result.type.daily);
