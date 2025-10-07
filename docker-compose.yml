@@ -1,0 +1,33 @@
+services:
+  # Backend Flask API
+  server:
+    build:
+      context: ./server
+      dockerfile: Dockerfile
+    container_name: chartd-server
+    ports:
+      - "3000:3000"
+    environment:
+      - FLASK_APP=app.py
+      - PYTHONUNBUFFERED=1
+    restart: unless-stopped
+    networks:
+      - chartd-network
+
+  # Frontend Svelte App
+  client:
+    build:
+      context: ./client
+      dockerfile: Dockerfile
+    container_name: chartd-client
+    ports:
+      - "80:80"
+    depends_on:
+      - server
+    restart: unless-stopped
+    networks:
+      - chartd-network
+
+networks:
+  chartd-network:
+    driver: bridge
