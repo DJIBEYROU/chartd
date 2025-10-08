@@ -24,7 +24,6 @@ export const non_renewables = [
 
 export const misc = ["demand", "spot_price"]
 
-
 export const colors = {
   hydropower: 'blue',         // Blue
   geothermal: 'darkgray',     // Dark gray
@@ -44,12 +43,9 @@ export const colors = {
   others: "#36454F",
   demand: "#000",
   spot_price: 'purple',
-  // solar_curtailment: pattern.draw('diagonal', 'rgba(255, 208, 126, 1)', 'rgba(70, 91, 117, 1)'), 
-  // wind_curtailment: pattern.draw('diagonal', 'rgba(145, 217, 255, 1)', 'rgba(70, 91, 117, 1)')
-  solar_curtailment: 'black',
+  solar_curtailment: 'yellow',
   wind_curtailment: '#40E0D0'
 };
-
 
 
  

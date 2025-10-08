@@ -49,10 +49,28 @@
       });
 
       // Using local backend server
-      // const url = import.meta.env.VITE_API_BASE_URL;
+       //const url = import.meta.env.VITE_API_BASE_URL;
       // const url = process.env.VITE_API_BASE_URL;
 
-      const url = "https://server-production-djiburil.up.railway.app";
+      //const url = "https://server-production-djiburil.up.railway.app";
+      //const url = import.meta.env.VITE_API_BASE_URL;
+      //const response = await fetch(`http://localhost:3000/api/data?${params}`);
+      //const result = await response.json();
+
+      //const url = import.meta.env.VITE_API_BASE_URL;
+
+      //const response = await fetch(`${url}/api/data?${params}`);
+      //const result = await response.json();
+
+      //const url = import.meta.env.VITE_API_BASE_URL;
+      //const url = import.meta.env.VITE_API_BASE_URL;
+
+    // Fetch data from backend
+     // const response = await fetch(`${url}/api/data?${params}`);
+      //const response = await fetch(`http://localhost:3000/api/data?${params}`);
+      //const result = await response.json();
+      // Local backend URL
+      const url = 'http://localhost:3000';
 
       const response = await fetch(`${url}/api/data?${params}`);
       const result = await response.json();

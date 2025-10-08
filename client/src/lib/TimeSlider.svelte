@@ -39,7 +39,7 @@
     
     // Set up the full date range for the slider
     const minDate = new Date('2022-01-01');
-    const maxDate = new Date('2024-12-31');
+    const maxDate = new Date('2025-12-31');
     
     // Create an array of dates between min and max (e.g., monthly increments)
     const dateRange = [];
@@ -52,7 +52,7 @@
 
     // Set initial values if not provided
     if (!startDate) startDate = '2022-01-01';
-    if (!endDate) endDate = '2024-09-31';
+    if (!endDate) endDate = '2025-08-31';
     
     // Parse initial dates if they're strings
     const parsedStartDate = startDate instanceof Date ? startDate : new Date(startDate);
