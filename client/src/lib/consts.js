@@ -82,7 +82,7 @@ export const translations = {
     japan: 'Japan',
     tokyo: 'Tokyo',
     hokkaido: 'Hokkaido',
-    tohuku: 'Tohoku',
+    tohoku: 'Tohoku',
     chubu: 'Chubu',
     hokuriku: 'Hokuriku',
     kansai: 'Kansai',
@@ -119,7 +119,7 @@ export const translations = {
     japan: '全国',
     tokyo: '東京',
     hokkaido: '北海道',
-    tohuku: '東北',
+    tohoku: '東北',
     chubu: '中部',
     hokuriku: '北陸',
     kansai: '関西',
@@ -129,4 +129,4 @@ export const translations = {
   }
 };
 
-export const regions = ['japan', 'tokyo', 'hokkaido', 'tohuku', 'chubu', 'hokuriku', 'kansai', 'chugoku', 'shikoku', 'kyushu'];
+export const regions = ['japan', 'tokyo', 'hokkaido', 'tohoku', 'chubu', 'hokuriku', 'kansai', 'chugoku', 'shikoku', 'kyushu'];
