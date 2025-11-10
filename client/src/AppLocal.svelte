@@ -13,8 +13,8 @@
   let dailyData = []
   let monthlyData = []
   let selectedRegion = 'japan';
-  let startDate = '2025-04-01';
-  let endDate = '2025-04-15';
+  let startDate = '2040-04-01';
+  let endDate = '2040-04-15';
   let aggregationLevel = 'hourly'; // Default aggregation for full date range
   let allDates = []; // Store all dates for reuse
   let clickedItem; // Clicked item on legend
