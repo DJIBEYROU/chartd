@@ -293,6 +293,12 @@ def get_energy_data():
         # Add 2025 file if end_date is in 2025 or if no end_date specified
         if not end_date_dt or end_date_dt.year >= 2025:
             files_to_load.append('./data/2025/power-data.json')
+        # Add 2035 file if end_date is in 2035 or if no end_date specified
+        if not end_date_dt or end_date_dt.year >= 2035:
+            files_to_load.append('./data/2035/power-data.json')
+        # Add 2040 file if end_date is in 2040 or if no end_date specified
+        if not end_date_dt or end_date_dt.year >= 2040:
+            files_to_load.append('./data/2040/power-data.json')
         
         print(f"Loading data from files: {files_to_load}")
         
